@@ -23,7 +23,7 @@ async def main_pratheek():
                 GET_CHANNEL_OR_GROUP = await app.get_chat(int(CHANNEL_OR_GROUP_ID))
                 CHANNEL_OR_GROUP_NAME = GET_CHANNEL_OR_GROUP.title
                 CHANNEL_OR_GROUP_TYPE = GET_CHANNEL_OR_GROUP.type
-                xxx_pratheek = f"𝙇𝙐𝙉𝘼 𝘽𝙊𝙏𝙎 𝙎𝙏𝘼𝙏𝙐𝙎 :\n\n**𝗣𝗥𝗢𝗝𝗘𝗖𝗧 𝗟𝗨𝗡𝗔**: 𝙏𝙝𝙞𝙨 𝙞𝙨 𝙡𝙞𝙫𝙚 𝙨𝙩𝙖𝙩𝙪𝙨 𝙤𝙛 𝙖𝙡𝙡 𝙇𝙪𝙣𝙖 𝘽𝙤𝙩𝙨. 𝙏𝙝𝙞𝙨 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙠𝙚𝙚𝙥𝙨 𝙤𝙣 𝙪𝙥𝙙𝙖𝙩𝙞𝙣𝙜 𝙞𝙣 𝙚𝙫𝙚𝙧𝙮 45 𝙢𝙞𝙣𝙨 𝙬𝙞𝙩𝙝 𝙡𝙞𝙫𝙚 𝙨𝙩𝙖𝙩𝙪𝙨 𝙤𝙛 𝙖𝙡𝙡 𝙗𝙤𝙩𝙨."
+                xxx_pratheek = f"𝙇𝙐𝙉𝘼 𝘽𝙊𝙏𝙎 𝙎𝙏𝘼𝙏𝙐𝙎 :\n\n**𝗣𝗥𝗢𝗝𝗘𝗖𝗧 𝗟𝗨𝗡𝗔**: 𝙏𝙝𝙞𝙨 𝙞𝙨 𝙡𝙞𝙫𝙚 𝙨𝙩𝙖𝙩𝙪𝙨 𝙤𝙛 𝙖𝙡𝙡 𝙇𝙪𝙣𝙖 𝘽𝙤𝙩𝙨. 𝙏𝙝𝙞𝙨 𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙠𝙚𝙚𝙥𝙨 𝙤𝙣 𝙪𝙥𝙙𝙖𝙩𝙞𝙣𝙜 𝙞𝙣 𝙚𝙫𝙚𝙧𝙮 𝟯 𝙢𝙞𝙣𝙨 𝙬𝙞𝙩𝙝 𝙡𝙞𝙫𝙚 𝙨𝙩𝙖𝙩𝙪𝙨 𝙤𝙛 𝙖𝙡𝙡 𝙗𝙤𝙩𝙨."
                 for bot in BOT_LIST:
                     try:
                         yyy_pratheek = await app.send_message(bot, "/start")
@@ -47,10 +47,10 @@ async def main_pratheek():
                         await asyncio.sleep(e.x)            
                 time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
                 last_update = time.strftime(f"%d %b %Y at %I:%M %p")
-                xxx_pratheek += f"\n\n✔️ 𝗟𝗮𝘀𝘁 𝗰𝗵𝗲𝗰𝗸𝗲𝗱 𝗼𝗻: {last_update} ({TIME_ZONE})\n\n<i>💘 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗲𝘃𝗲𝗿𝘆 𝟰𝟱𝗺𝗶𝗻 </i> - Made By||[ALAN WALKER]||"
+                xxx_pratheek += f"\n\n✔️ 𝗟𝗮𝘀𝘁 𝗰𝗵𝗲𝗰𝗸𝗲𝗱 𝗼𝗻: {last_update} ({TIME_ZONE})\n\n<i>💘 𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗲𝘃𝗲𝗿𝘆 𝟯 𝗺𝗶𝗻 </i> - Made By||[ALAN WALKER]||"
                 xxx_pratheek += f"\n\n💟 #TRYLUNA "
                 await app.edit_message_text(int(CHANNEL_OR_GROUP_ID), MESSAGE_ID, xxx_pratheek)
                 print(f"Last checked on: {last_update}")                
-                await asyncio.sleep(2700)
+                await asyncio.sleep(180)
                         
 app.run(main_pratheek())
