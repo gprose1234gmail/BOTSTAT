@@ -33,7 +33,7 @@ async def main_pratheek():
                         for ccc in zzz_pratheek:
                             bbb = ccc.message_id
                         if aaa == bbb:
-                            xxx_pratheek += f"𝗠𝗔𝗗𝗘 𝗪𝗜𝗧𝗛 𝗟𝗢𝗩𝗘 ❤️:\n\n🔗[{bot}](https://t.me/{bot}):𝙄𝙉 𝙎𝙇𝙀𝙀𝙋 💤"
+                            xxx_pratheek += f"𝗠𝗔𝗗𝗘 𝗪𝗜𝗧𝗛 𝗟𝗢𝗩𝗘 ❤️:\n\n🔗[{bot}](https://t.me/{bot}): 𝙄𝙉 𝙎𝙇𝙀𝙀𝙋 💤"
                             for bot_admin_id in BOT_ADMIN_IDS:
                                 try:
                                     await app.send_message(int(bot_admin_id), f"🔗 **SORRY GUYS SOME ISSUE !! [{bot}](https://t.me/{bot})𝙄𝙉 𝙎𝙇𝙀𝙀𝙋** 💤")
@@ -48,8 +48,9 @@ async def main_pratheek():
                 time = datetime.datetime.now(pytz.timezone(f"{TIME_ZONE}"))
                 last_update = time.strftime(f"%d %b %Y at %I:%M %p")
                 xxx_pratheek += f"\n\n✔️ 𝗟𝗮𝘀𝘁 𝗰𝗵𝗲𝗰𝗸𝗲𝗱 𝗼𝗻:"
-                xxx_pratheek += f"\n\n{last_update} ({TIME_ZONE})"
-                xxx_pratheek += f"\n\n𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗲𝘃𝗲𝗿𝘆 𝟯 𝗺𝗶𝗻 </i> - Made By||𝘼𝙇𝘼𝙉 𝙒𝘼𝙇𝙆𝙀𝙍 ||"
+                xxx_pratheek += f"\n\n{last_update}\n({TIME_ZONE})"
+                xxx_pratheek += f"\n\n𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗲𝘃𝗲𝗿𝘆 𝟯 𝗺𝗶𝗻 </i> - Made By|| 𝙻𝚄𝙽𝙰-𝚇-𝚂𝚈𝚂𝚃𝙴𝙼 ||"
+                xxx_pratheek += f"\n\n𝗦𝗜𝗡𝗚𝗔𝗣𝗢𝗥𝗘 𝗦𝗘𝗥𝗩𝗘𝗥"
                 xxx_pratheek += f"\n\n💟 #TRYLUNA "
                 await app.edit_message_text(int(CHANNEL_OR_GROUP_ID), MESSAGE_ID, xxx_pratheek)
                 print(f"Last checked on: {last_update}")                
