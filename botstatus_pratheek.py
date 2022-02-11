@@ -49,8 +49,8 @@ async def main_pratheek():
                 last_update = time.strftime(f"%d %b %Y at %I:%M %p")
                 xxx_pratheek += f"\n\n✔️ 𝗟𝗮𝘀𝘁 𝗰𝗵𝗲𝗰𝗸𝗲𝗱 𝗼𝗻:"
                 xxx_pratheek += f"\n\n{last_update}\n({TIME_ZONE})"
-                xxx_pratheek += f"\n\n𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗲𝘃𝗲𝗿𝘆 𝟯 𝗺𝗶𝗻 </i> \n- Made By|| 𝙻𝚄𝙽𝙰-𝚇-𝚂𝚈𝚂𝚃𝙴𝙼 ||"
-                xxx_pratheek += f"\n\n𝗦𝗜𝗡𝗚𝗔𝗣𝗢𝗥𝗘 𝗦𝗘𝗥𝗩𝗘𝗥"
+                xxx_pratheek += f"\n\n𝗨𝗽𝗱𝗮𝘁𝗲𝘀 𝗲𝘃𝗲𝗿𝘆 𝟯 𝗺𝗶𝗻 </i>\nмα∂є ву|| 𝙻𝚄𝙽𝙰-𝚇-𝚂𝚈𝚂𝚃𝙴𝙼 ||"
+                xxx_pratheek += f"\n\n𝗦𝗨𝗖𝗖𝗘𝗦𝗙𝗨𝗟𝗟𝗬 𝗖𝗢𝗡𝗡𝗘𝗖𝗧𝗘𝗗:-\n𝗦𝗜𝗡𝗚𝗔𝗣𝗢𝗥𝗘 𝗦𝗘𝗥𝗩𝗘𝗥\n&& 𝗠𝗨𝗠𝗕𝗔𝗜 𝗦𝗘𝗥𝗩𝗘𝗥"
                 xxx_pratheek += f"\n\n💟 #TRYLUNA "
                 await app.edit_message_text(int(CHANNEL_OR_GROUP_ID), MESSAGE_ID, xxx_pratheek)
                 print(f"Last checked on: {last_update}")                
