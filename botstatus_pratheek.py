@@ -33,15 +33,15 @@ async def main_pratheek():
                         for ccc in zzz_pratheek:
                             bbb = ccc.message_id
                         if aaa == bbb:
-                            xxx_pratheek += f"𝗠𝗔𝗗𝗘 𝗪𝗜𝗧𝗛 𝗟𝗢𝗩𝗘 ❤️:\n\n💕  [{bot}](https://t.me/{bot})\n💟 **𝗟𝗜𝗩𝗘**: I M AT REST  💤💤"
+                            xxx_pratheek += f"𝗠𝗔𝗗𝗘 𝗪𝗜𝗧𝗛 𝗟𝗢𝗩𝗘 ❤️:\n\n💕  [{bot}](https://t.me/{bot}): I M AT REST  💤💤"
                             for bot_admin_id in BOT_ADMIN_IDS:
                                 try:
-                                    await app.send_message(int(bot_admin_id), f"💟 **SORRY GUYS SOME ISSUE !! @{bot} is AT SLEEP** 💤💤")
+                                    await app.send_message(int(bot_admin_id), f"💟 **SORRY GUYS SOME ISSUE !! [{bot}](https://t.me/{bot})is AT SLEEP** 💤💤")
                                 except Exception:
                                     pass
                             await app.read_history(bot)
                         else:
-                            xxx_pratheek += f"\n\n💕 **𝗟𝗨𝗡𝗔**: @{bot}\n💟 **𝗟𝗜𝗩𝗘**: alive 🔥"
+                            xxx_pratheek += f"\n\n💕 [{bot}](https://t.me/{bot}): alive 🔥"
                             await app.read_history(bot)
                     except FloodWait as e:
                         await asyncio.sleep(e.x)            
