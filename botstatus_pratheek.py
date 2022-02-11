@@ -4,6 +4,7 @@ import asyncio
 import datetime
 import pytz
 import os
+import BOT_NAME
 
 app = Client(
     api_id = int(os.environ["API_ID"]),
@@ -33,7 +34,7 @@ async def main_pratheek():
                         for ccc in zzz_pratheek:
                             bbb = ccc.message_id
                         if aaa == bbb:
-                            xxx_pratheek += f"𝗠𝗔𝗗𝗘 𝗪𝗜𝗧𝗛 𝗟𝗢𝗩𝗘 ❤️:\n\n💕 **𝗟𝗨𝗡𝗔**: @{bot}\n💟 **𝗟𝗜𝗩𝗘**: I M AT REST  💤💤"
+                            xxx_pratheek += f"𝗠𝗔𝗗𝗘 𝗪𝗜𝗧𝗛 𝗟𝗢𝗩𝗘 ❤️:\n\n💕 [{BOT_NAME}](https://t.me/{bot})\n💟 **𝗟𝗜𝗩𝗘**: I M AT REST  💤💤"
                             for bot_admin_id in BOT_ADMIN_IDS:
                                 try:
                                     await app.send_message(int(bot_admin_id), f"💟 **SORRY GUYS SOME ISSUE !! @{bot} is AT SLEEP** 💤💤")
